@@ -1,0 +1,44 @@
+<p><strong>This is admin control here</strong></p>
+
+
+<label>Manually insert an inclusion value into item restrictions table</label><br>
+<form style="padding:10px;width:90%;background:#b7b7b7;">
+	<label>Customer Type: </label>
+	<select name="customer_type">
+		<option value="customer">Customer</option>
+		<option value="area-code">Area Code</option>
+		<option value="cust-segment">Customer Segment</option>
+		<option value="territory-code">Territory Code</option>
+		<option value="chain-name">Chain Name</option>
+		<option value="revenue-segment">Revenue Segment</option>
+		<option value="cust-post-grp">Cust. Post. Grp.</option>
+		<option value="customer-type">Customer Type</option>
+		<option value="all">All</option>
+		<option value="shipto-state">ShipTo State</option>
+		<option value="shipto-country">ShipTo Country</option>
+		<option value="shipto-domestic">ShipTo Domestic</option>
+		<option value="shipto-intl" disabled>ShipTo INTL (never used)</option>
+	</select><br>
+	<label>Customer Code : </label><input type='text' name="customer_code" placeholder="cust code"/><br>
+	<label>Item Type: </label>
+	<select name ="item_type">
+		<option value="item_number">Item Number</option>
+		<option value="vendor_number">Vendor Number</option>
+		<option value="brand">Brand</option>
+		<option value="item_segment">Item Segment</option>
+		<option value="inv_post_grp">Inv Post Grp</option>
+		<option value="all">All</option>
+	</select><br>
+	<label>Item Code: </label><input placeholder="item code" type='text' name='item_code'/><br>
+	<label><strong>Inclusion</strong></label>
+		<select name='inclusion'>
+			<option value="yes">YES</option>
+			<option value="no">NO</option>
+		</select><br>
+
+</form>
+
+
+<label>Modal Text</label><br>
+<input type='text' placeholder='Choose Modal text here' style='height:100px; width:90%;' name='modalText'/><br>
+<button type='submit'>Submit</button>

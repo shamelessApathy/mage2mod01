@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+        <menu>
+          <add id="Liberty_ItemRestrictions::itemrestrictions" title="ItemRestrictions" translate="title" module="Liberty_ItemRestrictions" parent="Magento_Backend::content" sortOrder="50" dependsOnModule="Liberty_ItemRestrictions" resource="Liberty_ItemRestrictions::itemrestrictions"/>
+          <add id="Liberty_ItemRestrictions::admincontrol_admincontrols" title="Admincontrol" translate="title" module="Liberty_ItemRestrictions" parent="Liberty_ItemRestrictions::itemrestrictions" sortOrder="10" dependsOnModule="Liberty_ItemRestrictions" action="itemrestrictions/admincontrols" resource="Liberty_ItemRestrictions::itemrestrictions"/>
+        </menu>
+    </config>
+  
